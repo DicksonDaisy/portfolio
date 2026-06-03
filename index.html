@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        META DATA 
+        Essential for SEO and responsive design
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Product & Data Analyst</title>
+    
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts: Inter for a modern, clean look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 
+        NAVIGATION 
+        Sticky header with logo and menu links
+    -->
+    <header>
+        <nav class="container">
+            <div class="logo">DD<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle Button -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+        HERO SECTION 
+        Text-only landing area with high-impact headline
+    -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="badge">Product & Data Analyst</span>
+            <h1>Hi, I'm <span class="highlight">Dee</span></h1>
+            <p class="hero-description">I combine product management, product analytics, and data analytics to turn raw data into decisions and decisions into shipped products. I write SQL, build dashboards, run user research, prioritize roadmaps, and measure impact. Whether the role asks for strategy, analysis, or both, I deliver.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        ABOUT SECTION 
+        Detailed introduction and core value proposition
+    -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+
+            
+            <div class="about-img-placeholder">
+                    <img src="images/mine.JPG"
+                    class="about-img">
+            </div>
+            
+            <div class="about-des">
+                <div class= "about-write-up">
+                    <div class="section-header">
+                        <h2>Translating Numbers into Business Impact</h2>
+                    </div>
+
+                    <div class="about-content">
+                        <div class="about-description">
+                            <p>I thrive at the intersection of product, data, and strategy, transforming complex datasets into clear, actionable insights that drive product development and business growth. My expertise lies in leveraging robust analytical frameworks to understand user behavior, optimize product performance, and inform strategic roadmaps. I am passionate about building data-driven products that not only meet market needs but also deliver measurable impact.</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-search"></i></div>
+                        <h3>Diagnostic Lens</h3>
+                        <p>Isolating critical data patterns from noise to uncover root causes and opportunities.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Actionable Outcomes</h3>
+                        <p>Delivering interactive tools and strategic recommendations for fast, impactful decision-making.</p>
+                    </div>
+                </div>
+            </div>    
+            
+        </div>
+    </section>
+
+    <!-- 
+        SKILLS SECTION 
+        Visual representation of the "Analytical Arsenal"
+    -->
+    <section id="skills" class="skills section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Analytical Arsenal</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Data Analytics</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Data Cleaning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Product Analytics</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Funnel Analysis</span>
+                        <span class="skill-tag">Cohort Analysis</span>
+                        <span class="skill-tag">User Behavior</span>
+                        <span class="skill-tag">A/B Testing</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Product Management</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Roadmaps</span>
+                        <span class="skill-tag">PRDs</span>
+                        <span class="skill-tag">Stakeholder Management</span>
+                        <span class="skill-tag">Prioritization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        PROJECTS SECTION 
+        Grid of case studies with individual cards
+    -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img-box">
+                        <div class="project-overlay">HR Optimization</div>
+                        <div class="project-img-placeholder">
+                            <img src="images/HR 1.JPG"
+                            class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Recruitment Analytics Dashboard</h3>
+                        
+                        <div class="project-challenge">
+                            <h4>Challenge</h4>
+                            <p>The HR department faced inefficiencies in their talent acquisition process, lacking a unified view of recruitment metrics and struggling to identify bottlenecks in the hiring pipeline. This led to prolonged time-to-hire and missed opportunities for attracting top talent.</p>
+                        </div>
+                        
+                        <div class="project-result">
+                            <h4>Result</h4>
+                            <p>Designed and implemented an interactive Power BI dashboard that provided real-time insights into recruitment funnel performance, candidate source effectiveness, and time-to-hire metrics. This enabled HR to pinpoint friction points, optimize their strategies, and significantly reduce recruitment cycle times.</p>
+                        </div>
+                        
+                        <div class="project-links">
+                            <!--<a href="#">Case Study</a>-->
+                            <a href="https://docs.google.com/document/d/1Qlr-Votqz1Hg0grYocXh__5_etoN8RfkjfXwclibBkI/edit?usp=sharing" class="view-link">Read Case Study <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img-box">
+                        <div class="project-overlay">Revenue Insights</div>
+                        <div class="project-img-placeholder">
+                            <img src="images/foodmed.png"
+                            class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Performance Analysis</h3>
+                        
+                        <div class="project-challenge">
+                            <h4>Challenge</h4>
+                            <p>Fragmented sales data across various regional systems made it difficult to get a holistic view of sales performance, identify trends, and understand revenue leakage. Manual reporting was time-consuming and prone to errors, hindering timely strategic adjustments.</p>
+                        </div>
+                        
+                        <div class="project-result">
+                            <h4>Result</h4>
+                            <p>Developed automated SQL pipeline architectures to consolidate disparate sales data into a centralized data warehouse. Created comprehensive dashboards that provided unified performance metrics, enabling sales leadership to identify underperforming regions, optimize sales strategies, and recover potential revenue leakage.</p>
+                        </div>
+                        
+                        <div class="project-links">
+                            <!--<a href="#">Case Study</a>-->
+                            <a href="https://docs.google.com/document/d/121hA6xsP-PUHs7VeUlmX-O1K68IlFpfQxHEkgBt9TyM/edit?usp=sharing" class="view-link">Read Case Study <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img-box">
+                        <div class="project-overlay">Retention Strategy</div>
+                        <div class="project-img-placeholder">
+                            <img src="images/nestfund.png"
+                            class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Churn Analysis</h3>
+                        
+                        <div class="project-challenge">
+                            <h4>Challenge</h4>
+                            <p>A high customer churn rate was impacting long-term revenue and growth. The team lacked a deep understanding of why customers were leaving and what interventions would be most effective in retaining them.</p>
+                        </div>
+                        
+                        <div class="project-result">
+                            <h4>Result</h4>
+                            <p>Performed advanced cohort retention modeling using SQL window functions and Python to identify key indicators of churn and segment at-risk customers. Developed targeted retention strategies based on user behavior patterns, leading to a measurable reduction in churn and increased customer lifetime value.</p>
+                        </div>
+                        
+                        <div class="project-links">
+                            <!--<a href="#">Case Study</a>-->
+                            <a href="https://docs.google.com/document/d/1L5YqgtfN1rFrX1iqNvxFCkI-2ymlZDwd5qD9Lah_zIw/edit?usp=sharing" class="view-link">Read Case Study <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-img-box">
+                        <div class="project-overlay">Product Core</div>
+                        <div class="project-img-placeholder">
+                            <img src="images/emmason.png"
+                            class="project-img">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Product Performance Dashboard</h3>
+                        
+                        <div class="project-challenge">
+                            <h4>Challenge</h4>
+                            <p>The product team needed a real-time, centralized view of key product health metrics, including daily active users (DAU), onboarding completion rates, and feature adoption. Existing reporting was manual and reactive, making it difficult to quickly identify and address product issues.</p>
+                        </div>
+                        
+                        <div class="project-result">
+                            <h4>Result</h4>
+                            <p>Built a comprehensive Product Performance Dashboard tracking real-time application usage, onboarding lifecycle metrics, and DAU ratios. This enabled the product team to proactively monitor product health, identify areas for improvement, and make data-driven decisions to enhance user experience and drive product growth.</p>
+                        </div>
+                        
+                        <div class="project-links">
+                            <!--<a href="#">Case Study</a>-->
+                            <a href="https://www.emmasontech.com/" class="view-link">View Website <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        EXPERIENCE SECTION 
+        Timeline of professional roles
+    -->
+    <section id="experience" class="experience section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Professional Track</h2>
+            <div class="experience-list">
+                <div class="exp-item">
+                    <div class="exp-date">Present</div>
+                    <div class="exp-content">
+                        <h3>Product & Data Analyst</h3>
+                        <p class="company">Enterprise Insights Delivery</p>
+                        <p>As a Product & Data Analyst, I drive product strategy and growth through a combination of data-driven insights and effective product management. My responsibilities include:</p>
+                        <ul class="exp-highlights">
+                            <li>Leading the end-to-end product lifecycle from ideation to launch, ensuring alignment with business objectives and user needs.</li>
+                            <li>Conducting in-depth data analysis to identify market opportunities, user pain points, and product performance gaps.</li>
+                            <li>Developing and prioritizing product roadmaps, translating strategic goals into actionable product requirements documents (PRDs).</li>
+                            <li>Collaborating with cross-functional teams (engineering, design, marketing) to ensure seamless product development and successful market entry.</li>
+                            <li>Defining and tracking key performance indicators (KPIs) to measure product success and iterate on features for continuous improvement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-date">2022-2024</div>
+                    <div class="exp-content">
+                        <h3>Data Analyst</h3>
+                        <p class="company">Growth Analytics Team</p>
+                        <p>In my role as a Data Analyst, I specialized in transforming complex datasets into clear, actionable insights that informed product and marketing strategies. My key contributions included:</p>
+                        <ul class="exp-highlights">
+                            <li>Performing comprehensive funnel and cohort analyses to understand user journeys and identify areas for optimization.</li>
+                            <li>Designing and executing A/B tests to validate hypotheses and measure the impact of new features and marketing campaigns.</li>
+                            <li>Developing and maintaining interactive dashboards using Power BI and SQL to provide stakeholders with real-time performance metrics.</li>
+                            <li>Utilizing Python for advanced data cleaning, transformation, and statistical modeling to uncover deeper insights.</li>
+                            <li>Presenting complex analytical findings to non-technical audiences, enabling data-driven decision-making across the organization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        TESTIMONIALS SECTION 
+        Social proof and credibility
+    -->
+    <!---<section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <h2 class="section-title">What Others Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Dee transformed our recruitment process with data-driven insights. The dashboard they built reduced our time-to-hire by over a third, and the team now makes hiring decisions with confidence."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>Head of Talent Acquisition</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with Dee was a game-changer for our product team. Their ability to bridge product strategy and data analytics helped us identify and fix critical onboarding issues that were costing us users."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Marcus Chen</h4>
+                        <p>VP of Product</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Dee's SQL expertise and analytical rigor uncovered revenue leakage we didn't even know existed. The solutions implemented have already saved us millions."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Elena Rodriguez</h4>
+                        <p>Chief Financial Officer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- 
+        CONTACT SECTION 
+        Call to action and contact details
+    -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Let's Build Something Great</h2>
+                <p>I'm always interested in discussing new projects, creative ideas, or opportunities to add value to your organization. Whether you need product strategy, data analytics, or both, let's connect.</p>
+                <div class="contact-links">
+                    <a href="mailto:daisydicksonh@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i> daisydicksonh@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/daisydicksonhart" target="_blank" class="contact-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        FOOTER 
+        Copyright information
+    -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DD Portfolio. Crafted with a focus on product, data, and impact.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
