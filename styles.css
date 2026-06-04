@@ -22,6 +22,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 
 body {
@@ -30,6 +31,7 @@ body {
     line-height: 1.6;
     background-color: #002b36;
     overflow-x: hidden;
+    max-width: 100%;
     
 }
 
@@ -43,6 +45,8 @@ body {
     margin: 0 auto;
     padding: 0 1.5rem;
     box-sizing: border-box;
+    align-items: center;
+    
     
     
     
@@ -292,12 +296,13 @@ nav {
 }
 
 .about-img-placeholder {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 100%;
     background: transparent;
     justify-items: center;
-    margin-bottom: 1.5rem;;
-     object-fit: contain;
+    margin-bottom: 1.5rem;
+    object-fit: contain;
 
 }
 
@@ -403,7 +408,7 @@ nav {
 */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(min(450px, 100%), 1fr));
     gap: 3rem;
 }
 
@@ -756,6 +761,27 @@ footer {
     .hero-btns { flex-direction: column; }
     .skills-container { grid-template-columns: 1fr; }
     .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  /* your existing rules stay here */
+
+  /* Add these new rules */
+  .hero {
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .hero * {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 480px) {
