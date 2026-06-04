@@ -4,14 +4,15 @@
    ========================================
 */
 :root {
-    --primary: #000000;      /* Modern minimalist black */
-    --accent: #01692c;       /* Soft blue for links/actions */
-    --bg-light: #fcfcfc;     /* Light gray background */
-    --bg-result: #f0f4f8;    /* Light blue background for result sections */
-    --white: #ffffff;
-    --text-main: #111827;    /* Near black for text */
-    --text-muted: #4b5563;   /* Gray for secondary text */
-    --border: #e5e7eb;       /* Light border color */
+    --primary: #179dbf;      /* Modern minimalist black */
+    --accent: #b6db00;       /* Soft blue for links/actions */
+    --bg-light: #013a47;     /* Light gray background */
+    --bg-result: #00576b;    /* Light blue background for result sections */
+    --white: #013a47;
+    --gray: #013a47;
+    --text-main: #ffffff;    /* Near black for text */
+    --text-muted: #b7babb;   /* Gray for secondary text */
+    --border: #848484;       /* Light border color */
     --max-width: 1200px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -26,7 +27,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-main);
     line-height: 1.6;
-    background-color: #fdfdfd;
+    background-color: #002b36;
     overflow-x: hidden;
 }
 
@@ -289,7 +290,6 @@ nav {
     height: 100%;
     background: transparent;
     justify-items: center;
-    background-color: red;
     margin-bottom: 1.5rem;;
      object-fit: contain;
 
@@ -350,7 +350,7 @@ nav {
 */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 3rem;
 }
 
@@ -394,6 +394,23 @@ nav {
     gap: 3rem;
 }
 
+.proj-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.proj-tag {
+    padding: 0.5rem 0.5rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.625rem;
+    transition: var(--transition);
+}
+
 .project-card {
     background: var(--white);
     border-radius: 20px;
@@ -409,7 +426,7 @@ nav {
 
 .project-img-box {
     height: 300px;
-    background: #e2e8f0;
+    background: #f8f9fa;
     position: relative;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
@@ -419,7 +436,7 @@ nav {
 .project-img-placeholder {
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #e2e8f0, #cbd5e1);
+    /*background: linear-gradient(45deg, #e2e8f0, #cbd5e1);*/
 
 }
 
@@ -449,7 +466,7 @@ nav {
 
 .project-info h3 {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-challenge {
@@ -642,8 +659,8 @@ nav {
    ========================================
 */
 .contact-box {
-    background: var(--primary);
-    color: var(--white);
+    background: var(--bg-light);
+    color: var(--text-main);
     padding: 5rem;
     border-radius: 40px;
     text-align: center;
@@ -670,10 +687,10 @@ nav {
 }
 
 .contact-btn {
-    background: var(--white);
+    background: var(--text-main);
     color: var(--primary);
     padding: 1rem 2rem;
-    border-radius: 100px;
+    border-radius: 10px;
     font-weight: 700;
     display: inline-flex;
     align-items: center;
