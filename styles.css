@@ -380,6 +380,10 @@ nav {
    SKILLS SECTION
    ========================================
 */
+
+#skills{
+    background-color: transparent;
+}
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -424,12 +428,14 @@ nav {
    PROJECTS SECTION
    ========================================
 */
-
+#projects{
+    background-color: var(--bg-light);
+}
 
 
 .projects-grid {
     display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(min(450px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(450px, 100%), 1fr));
     gap: 3rem;
 }
 
