@@ -184,25 +184,46 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio scripts initialized successfully.');
 });
 
-// JavaScript For Tab Switching Logic Only
+// JS: Put this script inside your main script file or before your closing </body> tag
 document.addEventListener("DOMContentLoaded", () => {
   const tabButtons = document.querySelectorAll(".tab-btn");
   const projectGrids = document.querySelectorAll(".project-grid");
 
+  // Function to handle switching tabs
+  function switchTab(targetTab) {
+    // 1. Update button active states
+    tabButtons.forEach(btn => {
+      if (btn.getAttribute("data-tab") === targetTab) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
+
+    // 2. Update project grid visibility
+    projectGrids.forEach(grid => {
+      if (grid.id === targetTab) {
+        grid.classList.add("active");
+      } else {
+        grid.classList.remove("active");
+      }
+    });
+  }
+
+  // Set up click events for manual tab switching
   tabButtons.forEach(button => {
     button.addEventListener("click", () => {
-      tabButtons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
-
       const targetTab = button.getAttribute("data-tab");
-
-      projectGrids.forEach(grid => {
-        if (grid.id === targetTab) {
-          grid.classList.add("active");
-        } else {
-          grid.classList.remove("active");
-        }
-      });
+      switchTab(targetTab);
     });
   });
+
+  // BACKGROUND CHECK: Quietly checks your resume link when the page opens
+  const currentHash = window.location.hash;
+  
+  if (currentHash === "#product") {
+    switchTab("product"); // Pre-selects Product Management tab
+  } else if (currentHash === "#analytics") {
+    switchTab("analytics"); // Pre-selects Data Analytics tab
+  }
 });
