@@ -183,3 +183,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('Portfolio scripts initialized successfully.');
 });
+
+// JavaScript For Tab Switching Logic Only
+document.addEventListener("DOMContentLoaded", () => {
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const projectGrids = document.querySelectorAll(".project-grid");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      tabButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const targetTab = button.getAttribute("data-tab");
+
+      projectGrids.forEach(grid => {
+        if (grid.id === targetTab) {
+          grid.classList.add("active");
+        } else {
+          grid.classList.remove("active");
+        }
+      });
+    });
+  });
+});
