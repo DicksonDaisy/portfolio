@@ -141,6 +141,10 @@ nav {
 }
 
 /* Active navigation link styling */
+
+.nav-links active{
+    background-color: black;
+}
 .nav-links a.active {
     color: var(--primary);
     font-weight: 600;
@@ -820,7 +824,20 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links { display: none; }
+    .nav-links { display: none; 
+        /* 2. Turn it into a mobile overlay menu */
+        position: absolute;
+        top: 70px; /* Adjust this based on your navbar's actual height */
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+        
+        /* 3. FORCE THE BACKGROUND COLOR (Change 'black' to whatever dark color you want) */
+        background-color: black; 
+        z-index: 1000;
+    }
     .menu-toggle { display: block; }
     .section-padding { padding: 60px 0; }
     .contact-box { padding: 3rem 1.5rem; }
